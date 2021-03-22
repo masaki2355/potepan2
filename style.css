@@ -3893,7 +3893,7 @@ select::-ms-expand {
     display: block;
     width: 281px;
     height: 275px;
-    
+    background-image: url(../images/bg-section-top-course.png);
     background-size: contain;
     background-repeat: no-repeat;
     top: 40px;
@@ -3958,14 +3958,8 @@ select::-ms-expand {
 /* =====================================
  Module: underlayer-hero
  ===================================== */
-.section-underlayer-hero {
-  padding-top: 70px;
-  padding-bottom: 71px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1440px;
-  background-color: #f79314;
-}
+
+
 .underlayer-hero-heading {
   color: #fff;
   font-size: 40px;
@@ -4559,20 +4553,41 @@ select::-ms-expand {
   padding-bottom: 80px;
   background-color: #f6f6f6;
 }
+
+.section-underlayer-hero {
+  padding-top: 70px;
+  padding-bottom: 71px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1440px;
+  
+}
+
+
+.title-background　{
+  position: absolute; /* ここで基準となる要素の位置を指定 */
+    top: 0px; /* 表示位置を記載 */
+    left: 0px; /* 表示位置を記載 */
+    z-index:-1;
+}
+
+
 .top-potepan .content-width {
-  background-image: url(../images/bg-section-top-course.png);
-  background-size: 281px 275px;
+  
   background-repeat: no-repeat;
   background-position: calc(100% - 50px) top;
   padding-top: 35px;
 }
+
 .main-section.top-potepan > * {
   position: relative;
   z-index: 1;
 }
+
 .main-section.top-service, .main-section.top-works {
   background-color: #fcfaf5;
 }
+
 @media screen and (max-width: 767px) {
   .main-section {
     padding-top: 60px;
